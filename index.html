@@ -3,9 +3,13 @@
 <head>
     <title>Admin | Home</title>    
     <!-- CSS FILES -->    
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>    
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>       
+    <link href="../css/morris.css" rel="stylesheet" type="text/css" /> <!-- morris.js charts css file -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css"/> <!-- my own css file -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <!--font awesome dosyalarını indir-->
 </head>
 <body>
 
@@ -158,7 +162,7 @@
             <div class="col-md-3 col-lg-3" id="sidebar">
                 <div class="profile clearfix">
                     <div class="pro-left">
-                        <span><img src="img/rvp.jpg" alt=""/></span>
+                        <span><img src="../img/rvp.jpg" alt=""/></span>
                     </div>
                     <div class="clear" ></div>
                     <div class="pro-right">
@@ -241,20 +245,20 @@
                     <div class="col-md-8 icontenttop">
                         <ul class="list-inline mini-stat">
                             <li>
-				<h5>LIKES <span class="stat-value stat-color-orange"><i class="glyphicon glyphicon-plus-sign"></i> 4,450</span></h5>
-				<span class="inlinebarlike"></span>
-                            </li>
-                            <li>
-				<h5>SUBSCRIBERS <span class="stat-value stat-color-blue"><i class="glyphicon glyphicon-plus-sign"></i> 2,450</span></h5>
-				<span class="inlinebarsub"></span>
-                            </li>
-                            <li>
-				<h5>CUSTOMERS <span class="stat-value stat-color-seagreen"><i class="glyphicon glyphicon-plus-sign"></i> 5,450</span></h5>
-				<span class="inlinebarcust"></span>
-                            </li>
-                            <li>
-				<h5>ORDERS <span class="stat-value stat-color-red"><i class="glyphicon glyphicon-plus-sign"></i> 5,200</span></h5>
-				<span class="inlinebarord"></span>
+				                <h5>LIKES <span class="stat-value stat-color-orange"><i class="glyphicon glyphicon-plus-sign"></i> 4,450</span></h5>
+				                <span class="inlinebarlike"></span>
+                                            </li>
+                                            <li>
+				                <h5>SUBSCRIBERS <span class="stat-value stat-color-blue"><i class="glyphicon glyphicon-plus-sign"></i> 2,450</span></h5>
+				                <span class="inlinebarsub"></span>
+                                            </li>
+                                            <li>
+				                <h5>CUSTOMERS <span class="stat-value stat-color-seagreen"><i class="glyphicon glyphicon-plus-sign"></i> 5,450</span></h5>
+				                <span class="inlinebarcust"></span>
+                                            </li>
+                                            <li>
+				                <h5>ORDERS <span class="stat-value stat-color-red"><i class="glyphicon glyphicon-plus-sign"></i> 5,200</span></h5>
+				                <span class="inlinebarord"></span>
                             </li>
                         </ul>
                     </div><!--col-md-8 top icontenttop stats -->
@@ -266,7 +270,7 @@
                             <div class="panel-stat3 regus">
                                 <h2 class="m-top-none" id="userCount">2221</h2>
                                 <h5>Registered users</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 5% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 10 new reg user</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-user"></i></span>
                                 </div>
@@ -282,7 +286,7 @@
                             <div class="panel-stat3 serlod">
                                 <h2 class="m-top-none" id="userCount">25%</h2>
                                 <h5>Server Load</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 1% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 5% Higher</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-hdd"></i></span>
                                 </div>
@@ -298,7 +302,7 @@
                             <div class="panel-stat3 totvisit">
                                 <h2 class="m-top-none" id="userCount">12500</h2>
                                 <h5>Total visitors</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 9% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 500 new visitor</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-stats"></i></span>
                                 </div>
@@ -314,7 +318,7 @@
                             <div class="panel-stat3 topdown">
                                 <h2 class="m-top-none" id="userCount">950</h2>
                                 <h5>Downloads</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 2% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 50 new download</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-download"></i></span>
                                 </div>
@@ -330,7 +334,7 @@
                             <div class="panel-stat3 tasks">
                                 <h2 class="m-top-none" id="userCount">12</h2>
                                 <h5>New Tasks</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 1% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 10 new tasks</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-tasks"></i></span>
                                 </div>
@@ -362,7 +366,7 @@
                             <div class="panel-stat3 error">
                                 <h2 class="m-top-none" id="userCount">120</h2>
                                 <h5>Errors</h5>
-                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 9% Higher than last week</span>
+                                <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 2 new error</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-exclamation-sign"></i></span>
                                 </div>
@@ -391,17 +395,78 @@
                             </div><!--panel-stat3-->
                         </div><!--col-sm-6 col-md-3 ads--> 
                     </div>
-                    
-                    <!--<div class="block">-->
-                        <!--başlık-->
-                        
-                        <!--<div class="block-content">
-
-                         bulut kapasite vs github twitter link 
-
-
-                        </div><!--block-content-->
-                    <!--</div>--><!--block-->
+                    <div class="clearfix"></div> 
+                        <div class="row"><!-- ####### SOCIAL BOXS ###### -->
+                            <div class="col-md-4">					
+					            <div class="social-box facebook">
+						            <i class="fa fa-facebook"></i>
+						            <ul>
+							            <li>
+								            <strong>89k</strong>
+								            <span>friends</span>
+							            </li>
+							            <li>
+								            <strong>459</strong>
+								            <span>feeds</span>
+							            </li>
+						            </ul>
+					            </div><!--/social-box facebook-->
+				            </div><!--/col-->
+				            <div class="col-md-4">					
+					            <div class="social-box twitter">
+						            <i class="fa fa-twitter"></i>
+						            <ul>
+							            <li>
+								            <strong>973k</strong>
+								            <span>followers</span>
+							            </li>
+							            <li>
+								            <strong>1.792</strong>
+								            <span>tweets</span>
+							            </li>
+						            </ul>
+					            </div><!--/social-box twitter-->	
+				            </div><!--/col-->
+				            <div class="col-md-4">
+					            <div class="social-box linkedin">
+						            <i class="fa fa-linkedin"></i>
+						            <ul>
+							            <li>
+								            <strong>500+</strong>
+								            <span>contacts</span>
+							            </li>
+							            <li>
+								            <strong>292</strong>
+								            <span>feeds</span>
+							            </li>
+						            </ul>
+					            </div><!--/ssocial-box linkedin-->		
+				            </div><!--/col-->
+                        </div><!-- ####### SOCIAL BOXS ###### -->
+                    <div class="clearfix"></div>
+                        <div class="row"><!-- MORRIS.JS CHARTS -->
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="block-header">
+                                        Statistics
+                                    </div><!--block-header-->
+                                    <div class="block-content">
+                                        <div class="chart" id="linechartuser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
+                                    </div><!--block-content-->
+                                </div><!--block-->
+                            </div><!--col-md-6-->
+                            <div class="col-md-6">
+                                <div class="block">
+                                    <div class="block-header">
+                                        Browser
+                                    </div><!--block-header-->
+                                    <div class="block-content">
+                                        <div class="chart" id="donutbrowser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
+                                    </div><!--block-content-->
+                                </div><!--block-->    
+                            </div><!--col-md-6-->
+                       </div><!-- ####### row morris graphs ####### -->
+                    <div class="clearfix"></div>                       
                 </div><!--row icontent2-->
             </div><!--col-md-9-->
         </div><!--row sidebar-->
@@ -409,10 +474,13 @@
 
     <!-- JS FILES -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js" type="text/javascript"></script> <!--angular source file -->
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/less.min.js" type="text/javascript"></script>
-    <script src="js/jquery.sparkline.min.js" type="text/javascript"></script><!-- bar chart plugin -->
-    <script src="js/App.js" type="text/javascript"></script><!-- angular js file -->
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/less.min.js" type="text/javascript"></script><!-- less.js -->
+    <script src="../js/jquery.sparkline.min.js" type="text/javascript"></script><!-- sparkline chart -->
+    <script src="../js/angular.easypiechart.min.js" type="text/javascript"></script><!-- easypiechart -->  
+    <script src="../js/raphael-min.js" type="text/javascript"></script><!-- line chart library1 -->
+    <script src="../js/morris.min.js" type="text/javascript"></script><!-- line chart library2 -->
+    <script src="../js/App.js" type="text/javascript"></script>
 </body>
 </html>
