@@ -1,5 +1,7 @@
-# admintheme 
+#admintheme 
 Bootstrap admin theme with using angularjs and other js libraries ( not finished yet)
 
-#additions need
-add font-awesome files to fonts folder
+#Author
+Ekin YÜCEL
+github.com/Broke116
+twitter.com/ekin10combr
