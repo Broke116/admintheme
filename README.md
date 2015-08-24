@@ -1,7 +1,7 @@
-#admintheme 
+## admintheme 
 Bootstrap admin theme with using angularjs and other js libraries ( not finished yet)
 
-#Author
+## Author
 Ekin YÜCEL
-github.com/Broke116
-twitter.com/ekin10combr
++[github/Broke116] github.com/Broke116
++[twitter/ekin10combr] twitter.com/ekin10combr
