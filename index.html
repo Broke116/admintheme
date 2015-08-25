@@ -8,11 +8,8 @@
     <link href="../css/morris.css" rel="stylesheet" type="text/css" /> <!-- morris.js charts css file -->
     <link href="../css/style.css" rel="stylesheet" type="text/css"/> <!-- my own css file -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
-    <!--font awesome dosyalarını indir-->
 </head>
 <body>
-
     <nav class="navbar navbar-default navbar-fixed-top navbar-add">
         <div class="container-fluid clearfix">
             <div class="navbar-header">
@@ -411,7 +408,7 @@
 							            </li>
 						            </ul>
 					            </div><!--/social-box facebook-->
-				            </div><!--/col-->
+				            </div><!--/col-md-4 facebook-->
 				            <div class="col-md-4">					
 					            <div class="social-box twitter">
 						            <i class="fa fa-twitter"></i>
@@ -426,7 +423,7 @@
 							            </li>
 						            </ul>
 					            </div><!--/social-box twitter-->	
-				            </div><!--/col-->
+				            </div><!--/col-md-4 twitter-->
 				            <div class="col-md-4">
 					            <div class="social-box linkedin">
 						            <i class="fa fa-linkedin"></i>
@@ -441,7 +438,7 @@
 							            </li>
 						            </ul>
 					            </div><!--/ssocial-box linkedin-->		
-				            </div><!--/col-->
+				            </div><!--/col-md-4 linkedin-->
                         </div><!-- ####### SOCIAL BOXS ###### -->
                     <div class="clearfix"></div>
                         <div class="row"><!-- MORRIS.JS CHARTS -->
@@ -454,7 +451,7 @@
                                         <div class="chart" id="linechartuser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
                                     </div><!--block-content-->
                                 </div><!--block-->
-                            </div><!--col-md-6-->
+                            </div><!--col-md-6 Statistics-->
                             <div class="col-md-6">
                                 <div class="block">
                                     <div class="block-header">
@@ -464,13 +461,68 @@
                                         <div class="chart" id="donutbrowser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
                                     </div><!--block-content-->
                                 </div><!--block-->    
-                            </div><!--col-md-6-->
-                       </div><!-- ####### row morris graphs ####### -->
+                            </div><!--col-md-6 Browser-->
+                       </div><!-- MORRIS.JS CHARTS -->
                     <div class="clearfix"></div>                       
                 </div><!--row icontent2-->
             </div><!--col-md-9-->
         </div><!--row sidebar-->
     </div><!--container-fluid-->
+
+    <footer class="footer">
+	<div class="row">
+	    <div class="col-sm-5">
+            &copy; 2015 <a href="https://github.com/Broke116/admintheme">admin</a> by Broke116
+	    </div><!--col-sm-5-->
+        <div class="col-sm-7 text-right">
+	        Powered by: <a href="https://github.com/Broke116/admintheme">admin</a> | Based on Bootstrap
+	    </div><!--col-sm-7 text-right-->
+	</div><!--row-->	
+	</footer>
+
+    <div id="usage">
+			<ul class="usage-list">
+				<li>
+					<div class="title">Memory</div>
+					<div class="bar">
+						<div class="progress">
+						  	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+						</div>
+					</div>			
+					<div class="desc">2GB of 8GB</div>
+				</li><!--memory-->
+				<li>
+					<div class="title">HDD</div>
+					<div class="bar">
+						<div class="progress">
+						  	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+						</div>
+					</div>			
+					<div class="desc">750GB of 1TB</div>
+				</li><!--hdd-->
+				<li>
+					<div class="title">SSD</div>
+					<div class="bar">
+						<div class="progress">
+					  		<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+						</div>
+					</div>			
+					<div class="desc">300GB of 1TB</div>
+				</li><!--ssd-->
+				<li>
+					<div class="title">Bandwidth</div>
+					<div class="bar">
+						<div class="progress">
+					  		<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+						</div>
+					</div>			
+					<div class="desc">50TB of 50TB</div>
+				</li><!--bandwith-->
+				<li>
+					<div class="text">Your Ip: <b>127.0.0.1</b> | Logged as: <b>team@team.com</b></div>
+				</li><!-- IP -->
+			</ul><!--usage-list-->	
+	</div><!--usage-->
 
     <!-- JS FILES -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js" type="text/javascript"></script> <!--angular source file -->
@@ -478,9 +530,9 @@
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../js/less.min.js" type="text/javascript"></script><!-- less.js -->
     <script src="../js/jquery.sparkline.min.js" type="text/javascript"></script><!-- sparkline chart -->
-    <script src="../js/angular.easypiechart.min.js" type="text/javascript"></script><!-- easypiechart -->  
-    <script src="../js/raphael-min.js" type="text/javascript"></script><!-- line chart library1 -->
-    <script src="../js/morris.min.js" type="text/javascript"></script><!-- line chart library2 -->
-    <script src="../js/App.js" type="text/javascript"></script>
+    <script src="../js/angular.easypiechart.min.js" type="text/javascript"></script><!-- easypiechart -->     
+    <script src="../js/raphael-min.js" type="text/javascript"></script>
+    <script src="../js/morris.min.js" type="text/javascript"></script>
+    <script src="../js/App.js" type="text/javascript"></script><!-- site js codes -->
 </body>
 </html>
