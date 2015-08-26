@@ -5,7 +5,6 @@
     <!-- CSS FILES -->    
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="../css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>       
-    <link href="../css/morris.css" rel="stylesheet" type="text/css" /> <!-- morris.js charts css file -->
     <link href="../css/style.css" rel="stylesheet" type="text/css"/> <!-- my own css file -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 </head>
@@ -441,33 +440,23 @@
 				            </div><!--/col-md-4 linkedin-->
                         </div><!-- ####### SOCIAL BOXS ###### -->
                     <div class="clearfix"></div>
-                        <div class="row"><!-- MORRIS.JS CHARTS -->
-                            <div class="col-md-6">
+                        <div class="row"><!-- HIGHCHARTS -->
+                            <div class="col-md-12">
                                 <div class="block">
                                     <div class="block-header">
                                         Statistics
                                     </div><!--block-header-->
                                     <div class="block-content">
-                                        <div class="chart" id="linechartuser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
+                                        <div class="chart" id="visitorstats" style="height: 250px;"></div><!-- morris.js chart-->                                                        
                                     </div><!--block-content-->
                                 </div><!--block-->
                             </div><!--col-md-6 Statistics-->
-                            <div class="col-md-6">
-                                <div class="block">
-                                    <div class="block-header">
-                                        Browser
-                                    </div><!--block-header-->
-                                    <div class="block-content">
-                                        <div class="chart" id="donutbrowser" style="height: 250px;"></div><!-- morris.js chart-->                                                        
-                                    </div><!--block-content-->
-                                </div><!--block-->    
-                            </div><!--col-md-6 Browser-->
-                       </div><!-- MORRIS.JS CHARTS -->
+                       </div><!-- ####### HIGHCHARTS ####### -->
                     <div class="clearfix"></div>                       
                 </div><!--row icontent2-->
             </div><!--col-md-9-->
         </div><!--row sidebar-->
-    </div><!--container-fluid-->
+    </div><!-- container-fluid-->
 
     <footer class="footer">
 	<div class="row">
@@ -478,7 +467,7 @@
 	        Powered by: <a href="https://github.com/Broke116/admintheme">admin</a> | Based on Bootstrap
 	    </div><!--col-sm-7 text-right-->
 	</div><!--row-->	
-	</footer>
+	</footer><!--footer-->
 
     <div id="usage">
 			<ul class="usage-list">
@@ -530,9 +519,9 @@
     <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../js/less.min.js" type="text/javascript"></script><!-- less.js -->
     <script src="../js/jquery.sparkline.min.js" type="text/javascript"></script><!-- sparkline chart -->
-    <script src="../js/angular.easypiechart.min.js" type="text/javascript"></script><!-- easypiechart -->     
-    <script src="../js/raphael-min.js" type="text/javascript"></script>
-    <script src="../js/morris.min.js" type="text/javascript"></script>
-    <script src="../js/App.js" type="text/javascript"></script><!-- site js codes -->
+    <script src="../js/angular.easypiechart.min.js" type="text/javascript"></script><!-- easypiechart -->  
+    <script src="../js/highcharts.js" type="text/javascript"></script>
+    <script src="../js/exporting.js" type="text/javascript"></script>
+    <script src="../js/App.js" type="text/javascript"></script><!-- site js codes -->    
 </body>
 </html>
