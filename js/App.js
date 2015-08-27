@@ -1,6 +1,7 @@
 /* 
 Created on : 22.Ağu.2015, 00:18:10
 Author     : Ekin YÜCEL
+Version    : 1.2
 */
 /* chart visitors */
 var app = angular.module('App', ['easypiechart']);
@@ -18,7 +19,7 @@ app.controller('chartCtrl', ['$scope', function ($scope) {
     };
 } ]);
 
-// like , sub , cust , ord line graphs
+// like , sub , cust , ord line graphs KULLANILMIYORLAR KALDIR BUNLARI
 $(function () {
     var myvalues = [1, 8, 5, 7, 4, 4, 9];
     $('.inlinebarlike').sparkline(myvalues, { type: 'bar', barColor: 'orange' }); // bar chart sparkline eklentisi
@@ -27,52 +28,24 @@ $(function () {
     $('.inlinebarord').sparkline(myvalues, { type: 'bar', barColor: '#f68484' });
 });
 
+/////////////// common getJSON function
+function getJSON(jsondata) {
+    var userdata = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': '../data.json',
+        'dataType': "json",
+        'success': function (data) {
+            userdata = data[jsondata];
+        }
+    });
+
+    return JSON.stringify(userdata);
+}
+///////////////////////////////
+
 /* visitor statistics */
-var jsonvwuscount = (function () {
-    var visitdata = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': '../data.json',
-        'dataType': "json",
-        'success': function (data) {
-            visitdata = data["visitvwcount"];
-        }
-    });
-
-    return JSON.stringify(visitdata);
-})();
-
-var jsonuscount = (function () {
-    var visitdata2 = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': '../data.json',
-        'dataType': "json",
-        'success': function (data) {
-            visitdata2 = data["visituscount"];
-        }
-    });
-
-    return JSON.stringify(visitdata2);
-})();
-
-var jsonunquscount = (function () {
-    var visitdata = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': '../data.json',
-        'dataType': "json",
-        'success': function (data) {
-            visitdata = data["visitunqcount"];
-        }
-    });
-
-    return JSON.stringify(visitdata);
-})();
-
 $(function () {
     $('#visitorstats').highcharts({
         title: {
@@ -101,18 +74,17 @@ $(function () {
         },
         series: [{
             name: 'View count',
-            data: $.parseJSON(jsonvwuscount)
+            data: $.parseJSON(getJSON("visitvwcount"))
         }, {
             name: 'User Count',
-            data: $.parseJSON(jsonuscount)
+            data: $.parseJSON(getJSON("visituscount"))
         }, {
             name: 'Unique Views',
-            data: $.parseJSON(jsonunquscount)
+            data: $.parseJSON(getJSON("visitunqcount"))
         }]
     });
 });
 /* visitor stats end */
-
 /* minimizeit */
 $('.minimizeit').click(function (e) {
     e.preventDefault();
@@ -127,3 +99,9 @@ $('.minimizeit').click(function (e) {
     $content.toggle(500);
 });
 /* minimizeit end */
+/*stats */
+
+$(document).ready(function () {
+    document.getElementById('userCount').innerHTML = $.parseJSON(getJSON("registereduser"));
+});
+/* stats end */
