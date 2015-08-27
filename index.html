@@ -241,38 +241,58 @@
                     </div><!--navbar-->    
                     </div><!-- col-md-4 breadcumb -->                    
                     <div class="col-md-8 icontenttop">
-                        <ul class="list-inline mini-stat">
-                            <li>
-				                <h5>LIKES <span class="stat-value stat-color-orange"><i class="glyphicon glyphicon-plus-sign"></i> 4,450</span></h5>
-				                <span class="inlinebarlike"></span>
-                                            </li>
-                                            <li>
-				                <h5>SUBSCRIBERS <span class="stat-value stat-color-blue"><i class="glyphicon glyphicon-plus-sign"></i> 2,450</span></h5>
-				                <span class="inlinebarsub"></span>
-                                            </li>
-                                            <li>
-				                <h5>CUSTOMERS <span class="stat-value stat-color-seagreen"><i class="glyphicon glyphicon-plus-sign"></i> 5,450</span></h5>
-				                <span class="inlinebarcust"></span>
-                                            </li>
-                                            <li>
-				                <h5>ORDERS <span class="stat-value stat-color-red"><i class="glyphicon glyphicon-plus-sign"></i> 5,200</span></h5>
-				                <span class="inlinebarord"></span>
-                            </li>
-                        </ul>
-                    </div><!--col-md-8 top icontenttop stats -->
+                       <div class="hdata">
+                          <div class="mcol-left">
+                            <i class="fa fa-thumbs-up bred"></i> 
+                          </div>
+                          <div class="mcol-right">
+                            <p><a href="#">7500</a> <em>likes</em></p>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div><!-- hdata like -->
+                        <div class="hdata">
+                          <div class="mcol-left">
+                            <!-- Icon with blue background -->
+                            <i class="fa fa-user bblue"></i> 
+                          </div>
+                          <div class="mcol-right">
+                            <!-- Number of visitors -->
+                            <p><a href="#">3200</a> <em>subscriber</em></p>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div><!-- hdata sub -->
+                        <div class="hdata">
+                          <div class="mcol-left">
+                            <i class="fa fa-money bgreen"></i> 
+                          </div>
+                          <div class="mcol-right">
+                            <p><a href="#">2000</a> <em>customer</em></p>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div><!-- hdata customer -->
+                        <div class="hdata">
+                          <div class="mcol-left">
+                            <i class="fa fa-opencart bbrow"></i> 
+                          </div>
+                          <div class="mcol-right">
+                            <p><a href="#">1808</a> <em>orders</em></p>
+                          </div>
+                          <div class="clearfix"></div>
+                        </div><!-- hdata orders -->
+                    </div><!-- col-md-8 icontenttop -->
                 </div><!--row icontent-->
                 <div class="clearfix"></div>
                 <div class="row">                    
                     <div class="stats">
                         <div class="col-sm-6 col-md-3">
                             <div class="panel-stat3 regus">
-                                <h2 class="m-top-none" id="userCount">2221</h2>
+                                <h2 class="m-top-none" id="userCount"></h2>
                                 <h5>Registered users</h5>
                                 <i class="glyphicon glyphicon-arrow-up"></i><span class="m-left-xs"> 10 new reg user</span>
                                 <div class="stat-icon">
                                     <span><i class="glyphicon glyphicon-user"></i></span>
                                 </div>
-                                <div class="refresh-button">
+                                <div class="refresh-button" id="refreshh">
                                     <i class="glyphicon glyphicon-refresh"></i>
                                 </div>
                                 <div class="loading-overlay">
