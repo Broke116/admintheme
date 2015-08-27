@@ -27,38 +27,6 @@ $(function () {
     $('.inlinebarord').sparkline(myvalues, { type: 'bar', barColor: '#f68484' });
 });
 
-//var visitordata = [
-//                    { y: '2009', a: 750, b: 250, c: 260 },
-//                    { y: '2010', a: 500, b: 120, c: 150 },
-//                    { y: '2011', a: 600, b: 40, c: 80 },
-//                    { y: '2012', a: 650, b: 160, c: 300 },
-//                    { y: '2013', a: 625, b: 40, c: 350 },
-//                    { y: '2014', a: 725, b: 180, c: 210 },
-//                    { y: '2015', a: 650, b: 100, c: 140 }
-//                 ];
-
-//Morris.Line({ // morris.js line chart
-//    element: 'linechartuser',
-//    data: visitordata,
-//    hideHover: 'auto',
-//    xkey: 'y',
-//    ykeys: ['a', 'b', 'c'],
-//    labels: ['View Count', 'Unique Views', 'User Count']
-//});
-
-//var browserdata = [
-//                    { label: "Safari", value: 12 },
-//                    { label: "Chrome", value: 40 },
-//                    { label: "Firefox", value: 35 },
-//                    { label: "IE", value: 5 },
-//                    { label: "Others", value: 8 }
-//                 ];
-
-//Morris.Donut({ // morris.js donut chart
-//    element: 'donutbrowser',
-//    data: browserdata
-//});
-
 /* visitor statistics */
 var jsonvwuscount = (function () {
     var visitdata = null;
@@ -73,8 +41,7 @@ var jsonvwuscount = (function () {
     });
 
     return JSON.stringify(visitdata);
-})
-    ();
+})();
 
 var jsonuscount = (function () {
     var visitdata2 = null;
@@ -89,8 +56,7 @@ var jsonuscount = (function () {
     });
 
     return JSON.stringify(visitdata2);
-})
-    ();
+})();
 
 var jsonunquscount = (function () {
     var visitdata = null;
@@ -105,8 +71,7 @@ var jsonunquscount = (function () {
     });
 
     return JSON.stringify(visitdata);
-})
-    ();
+})();
 
 $(function () {
     $('#visitorstats').highcharts({
@@ -147,3 +112,18 @@ $(function () {
     });
 });
 /* visitor stats end */
+
+/* minimizeit */
+$('.minimizeit').click(function (e) {
+    e.preventDefault();
+    var $content = $(this).parent().parent().next('.block-content');
+    if ($content.is(':visible')) {
+        $(this).children('i').removeClass('fa fa-chevron-up');
+        $(this).children('i').addClass('fa fa-chevron-down');
+    } else {
+        $(this).children('i').removeClass('fa fa-chevron-down');
+        $(this).children('i').addClass('fa fa-chevron-up');
+    }
+    $content.toggle(500);
+});
+/* minimizeit end */
