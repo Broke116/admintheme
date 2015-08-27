@@ -1,14 +1,15 @@
 /* 
     Created on : 22.AUG.2015, 00:16:10
     Author     : Ekin YUCEL
-    Version    : 1.0
+    Version    : 1.2
 */
 body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
+a { text-decoration:none; color:#5E5D5A; }
+a:hover { text-decoration:none; }
 
 .clear { float:none; }
 
 .white { color:#fff; }
-.dropdown-messages {  }
 .dropdown .notification {
   background-color: #f68484;
   border-radius: 10px;
@@ -27,10 +28,6 @@ body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
 .notifired { width:10px; padding:2px; margin-left:5px; color:#fff; background-color:#FF5959; border-radius: 5px;}
 .notifiongoing { width:10px; padding:2px; margin-left:5px; color:#fff; background-color:#4AE342; border-radius: 5px;}
 
-.sidebar {  }
-
-.navbar-add {  }
-.nav-list {  }
 .divider { height:10px; }
 
 /* navbar top links start */
@@ -89,26 +86,27 @@ body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
 .breadcrumb li a { color:#555; }
 .breadcumb .active { color:#777; text-decoration:underline; }
 
-.icontent ul.mini-stat {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  margin-bottom: 0;
+.bred { background-color:#F57171; }
+.bblue { background-color:#8ED1E8; }
+.bgreen { background-color:#8EE89B; }
+.bbrow { background-color:#E8C88E; }
+
+.hdata{	display: inline-block; width: 85px; margin-right: 15px; }
+.hdata i{ display: inline-block; height: 40px; width: 40px; line-height: 40px; font-size: 17px; text-align: center;
+	color: #fff;
+	border-radius: 50px;
+	box-shadow: inset 0px 0px 1px #777;
 }
-
-.icontent ul.mini-stat h5 { float: left; margin: 0; text-align: left; font-size: 0.85em; color: #888888; }
-.icontent ul.mini-stat h5 .stat-value { display: block; font-size: 1.5em; margin-top: 3px; }
-.icontent ul.mini-stat h5 .stat-value.stat-color-seagreen { color: #3F7577; }
-.icontent ul.mini-stat h5 .stat-value.stat-color-blue {  color: #1D92AF;}
-.icontent ul.mini-stat h5 .stat-value.stat-color-orange { color: #CE7B11; }
-.icontent ul.mini-stat h5 .stat-value.stat-color-red { color: #f68484; }
-
-.inlinebarlike { float:right; display:block; margin:15px 0 0 20px; }
-.inlinebarsub { float:right; display:block; margin:15px 0 0 20px; }
-.inlinebarcust { float:right; display:block; margin:15px 0 0 20px; }
-.inlinebarord { float:right; display:block; margin:15px 0 0 20px; }
+.hdata p, header .header-data .hdata a, header .header-data .hdata a:hover{ display: block; line-height: 16px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 3px;
+	color: #5E5D5A;
+}
+.hdata em{display: block; font-weight: normal; font-style: normal; font-size: 12px; }
+.mcol-left{ width: 48%; float: left; } 
+.mcol-right{ width: 48%; float: right; }
 
 /* stats */
 .panel-stat3
