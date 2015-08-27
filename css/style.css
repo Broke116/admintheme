@@ -151,28 +151,39 @@ body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
 .loading-overlay.loading-icon{ position:absolute;top:45%;left:50%;color:#fff;animation:spin .8s infinite linear;-webkit-animation:spin .8s infinite linear;-moz-animation:spin .8s infinite linear;-ms-animation:spin .8s infinite linear;-o-animation:spin .8s infinite linear; }
 
 /* block */
-.block { border: 1px solid #ccc; background-color:#fff;	margin:0 10px 0 10px; padding:10px 0 0 5px; }
-
+.block { border: 1px solid #ccc; background-color:#fff;	margin:0 10px 0 10px; padding:0; }
 .block a:hover { text-decoration:none; color:#fff; }
-
 .block-content { margin: 1em; min-height: .25em; background-color:#fff;  }
-
 .block-header 
 {
-    padding:10px 0 0 25px;
-	margin-bottom: 0px;
-	border-right: none;
-	border-left: none;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
+    background-color: #f8f8f8;  
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f2f2f2));  
+	background: -webkit-linear-gradient(top, #f8f8f8, #f2f2f2);  
+	background: -moz-linear-gradient(top, #f8f8f8, #f2f2f2);  
+	background: -ms-linear-gradient(top, #f8f8f8, #f2f2f2);  
+	background: -o-linear-gradient(top, #f8f8f8, #f2f2f2);  
+	background: linear-gradient(top, #f8f8f8, #f2f2f2);	  
+	border-top-right-radius: 3px;  
+	border-top-left-radius: 3px;  
+	text-shadow:0px 1px #fff;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #fff;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;   
+	/*padding: 8px 15px;*/
+	padding:10px 5px 10px 10px;
 }
+.block .block-header .block-icons i{ font-size: 14px; margin: 0px 4px; }
+.block .block-header .block-icons a{ color: #aaa; }
+.block .block-header .block-icons a:hover{ color: #999; }
+.block .block-header .block-icons i{ font-size: 14px; margin: 0px 4px; }
 
-.block-header div {	padding-top: 15px; }
 /* CHARTS */
 .chart-bottom-heading { margin-left:25px; }
 /* ################################ social box ################################ */
 
-.social-box 
+.socialbox 
 {
   margin:10px 10px 0 10px;
   min-height: 160px;
@@ -185,15 +196,15 @@ body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
   box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
 }
 
-.social-box i {display: block; font-size: 40px; line-height: 90px; background: #f5f5f5; }
-.social-box ul { list-style: none; padding: 10px 0; }
-.social-box ul li {display: block; width: 50%; float: left; }
-.social-box ul li:first-child { border-right: 1px solid #f5f5f5; }
-.social-box ul li strong { display: block; font-size: 20px; }
-.social-box ul li span { color: #d4d4d4; font-weight: 500; text-transform: uppercase; font-size: 10px; }
-.social-box.facebook i { background: #3b5998; color: white;  margin: -1px -1px 1px -1px; }
-.social-box.twitter i { background: #00aced;  color: white; margin: -1px -1px 1px -1px; }
-.social-box.linkedin i { background: #4875b4; color: white; margin: -1px -1px 1px -1px; }
+.socialbox i {display: block; font-size: 40px; line-height: 90px; background: #f5f5f5; }
+.socialbox ul { list-style: none; padding: 10px 0; }
+.socialbox ul li {display: block; width: 50%; float: left; }
+.socialbox ul li:first-child { border-right: 1px solid #f5f5f5; }
+.socialbox ul li strong { display: block; font-size: 20px; }
+.socialbox ul li span { color: #d4d4d4; font-weight: 500; text-transform: uppercase; font-size: 10px; }
+.socialbox.facebook i { background: #3b5998; color: white;  margin: -1px -1px 1px -1px; }
+.socialbox.twitter i { background: #00aced;  color: white; margin: -1px -1px 1px -1px; }
+.socialbox.linkedin i { background: #4875b4; color: white; margin: -1px -1px 1px -1px; }
 /* ################################ social box end ################################ */
 .footer { margin:50px 50px 20px 30px; }
 /* USAGE */
