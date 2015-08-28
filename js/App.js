@@ -1,7 +1,6 @@
 /* 
 Created on : 22.Ağu.2015, 00:18:10
 Author     : Ekin YÜCEL
-Version    : 1.2
 */
 /* chart visitors */
 var app = angular.module('App', ['easypiechart']);
@@ -31,13 +30,15 @@ $(function () {
 /////////////// common getJSON function
 function getJSON(jsondata) {
     var userdata = null;
+    $(".loading-overlay").show();
     $.ajax({
-        'async': false,
-        'global': false,
-        'url': '../data.json',
-        'dataType': "json",
-        'success': function (data) {
+        async: false,
+        global: false,
+        url: '../data.json',
+        dataType: "json",
+        success: function (data) {
             userdata = data[jsondata];
+            $(".loading-overlay").hide();
         }
     });
 
@@ -99,9 +100,22 @@ $('.minimizeit').click(function (e) {
     $content.toggle(500);
 });
 /* minimizeit end */
-/*stats */
 
+// adding our values to elements
 $(document).ready(function () {
+    //stats
     document.getElementById('userCount').innerHTML = $.parseJSON(getJSON("registereduser"));
+    document.getElementById('serverCount').innerHTML = $.parseJSON(getJSON("serverCount")) + '%';
+    document.getElementById('totalCount').innerHTML = $.parseJSON(getJSON("totalCount"));
+    document.getElementById('downloadCount').innerHTML = $.parseJSON(getJSON("downloadCount"));
+    document.getElementById('taskCount').innerHTML = $.parseJSON(getJSON("taskCount"));
+    document.getElementById('commentCount').innerHTML = $.parseJSON(getJSON("commentCount"));
+    document.getElementById('errorCount').innerHTML = $.parseJSON(getJSON("errorCount"));
+    document.getElementById('adCount').innerHTML = $.parseJSON(getJSON("adCount"));
+    //    if (document.getElementById('userCount').innerHTML != 000) {
+    //        document.getElementById('refreshhys').innerHTML = $.parseJSON(getJSON("registereduser"));
+    //    }
+    $('.refreshhys').click(function () {
+        document.getElementById('userCount').innerHTML = $.parseJSON(getJSON("registereduser"));
+    });
 });
-/* stats end */
