@@ -150,6 +150,7 @@ a:hover { text-decoration:none; }
 
 /* block */
 .block { border: 1px solid #ccc; background-color:#fff;	margin:0 10px 0 10px; padding:0; }
+.block.blockspace { margin-top:15px; }
 .block a:hover { text-decoration:none; color:#fff; }
 .block-content { margin: 1em; min-height: .25em; background-color:#fff;  }
 .block-header 
