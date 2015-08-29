@@ -2,8 +2,8 @@
 Bootstrap admin theme with using angularjs and other js libraries (still a work in progress)
 
 ## Pages
-Admin Dashboard
-Charts ( easypiechart,highcharts)
+- Admin Dashboard
+- Charts ( easypiechart,highcharts)
 .....
 
 ## Author
