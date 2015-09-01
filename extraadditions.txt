@@ -1,0 +1,33 @@
+1 - public class RegisterViewModel ( viewModel )
+    {
+        [Display(Name="Product Name")]
+        public string ProdName { get; set; }
+
+        [Display(Name = "Product Price")]
+        public int ProdPrice { get; set; }
+        public int SelectedCategory { get; set; } // seçili olan değeri belirtmek için 
+        public IEnumerable<SelectListItem> Categories { get; set; } // select list itemları atmakta
+    }
+2 - public ActionResult Register()
+        {
+            // dbden gelen veriler için
+            var cats = (from cat in entities.Categories
+                                select cat).ToList();
+
+            int selectedStateId = 3;
+
+            var model = new RegisterViewModel
+            {
+                SelectedCategory = selectedStateId,
+                Categories = cats.Select(r => new SelectListItem
+                {
+                    Value = r.CatID.ToString(),// id değerleri
+                    Text = r.CatName // text değeri
+                })
+            };
+
+            return View(model);
+        }
+        
+3 -  <%: Html.DropDownListFor(x => x.SelectedCategory,Model.Categories)%> 
+    view içinde oluşturduğumz dropdownlist 
