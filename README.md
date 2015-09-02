@@ -1,9 +1,12 @@
 ## admintheme 
-Bootstrap admin theme with using angularjs and other js libraries (still a work in progress)
+Bootstrap admin theme with using angularjs and other js libraries (still a work in progress).
+this theme will be add to the asp.net mvc project
 
 ## Description
 - Admin Dashboard
 - Charts ( easypiechart,highcharts)
+- Jquery datetimepicker
+- Jquery formvalidation
 .....
 
 ## INSTALL
