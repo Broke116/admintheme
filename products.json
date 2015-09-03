@@ -1,0 +1,7 @@
+{
+"productjson":[
+    {"ID":"1","Name":"awesome telphn","Price":"200","Category": "telephone","Date": "15/01/2015","Stock": "100","Details": "asdasd"},
+	{"ID":"2","Name":"awesome compt","Price":"150","Category": "computer","Date": "15/02/2015","Stock": "500","Details": "asdasd"},
+	{"ID":"3","Name":"awesome furnit","Price":"350","Category": "furniture","Date": "15/03/2015","Stock": "200","Details": "asdasd"}
+  ]
+}
