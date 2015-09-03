@@ -7,7 +7,8 @@ this theme will be add to the asp.net mvc project
 - Charts ( easypiechart,highcharts)
 - Jquery datetimepicker
 - Jquery formvalidation
-.....
+- Grid boosted with angularjs
+- .....
 
 ## INSTALL
 clone the master branch in your machine
