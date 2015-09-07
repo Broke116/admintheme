@@ -1,7 +1,7 @@
 /* 
     Created on : 22.AUG.2015, 00:16:10
     Author     : Ekin YUCEL
-    Version    : 1.5
+    Version    : 1.0
 */
 body { padding-top:60px; padding-bottom:40px; background-color: #f5f5f5;}
 a { text-decoration:none; color:#5E5D5A; }
@@ -226,3 +226,9 @@ a:hover { text-decoration:none; }
 .text { margin:0 0 5px 0; }
 /* quick posts */
 .quick-post { color:#787878; }
+/* forms */
+.formbuttonpanel { padding:0 40px 0 50px; }
+.formsize input { width:110px; }
+/* datatables */
+td.details-control { background: url('../img/details_open.png') no-repeat center center; cursor: pointer; }
+tr.shown td.details-control { background: url('../img/details_close.png') no-repeat center center; }
