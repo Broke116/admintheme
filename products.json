@@ -1,7 +1,184 @@
 {
-"productjson":[
-    {"ID":"1","Name":"awesome telphn","Price":"200","Category": "telephone","Date": "15/01/2015","Stock": "100","Details": "asdasd"},
-	{"ID":"2","Name":"awesome compt","Price":"150","Category": "computer","Date": "15/02/2015","Stock": "500","Details": "asdasd"},
-	{"ID":"3","Name":"awesome furnit","Price":"350","Category": "furniture","Date": "15/03/2015","Stock": "200","Details": "asdasd"}
-  ]
+    "data": [
+        {
+            "ID": "1",
+            "Name": "awesome telphn",
+            "Price": "200",
+            "Category": "telephone",
+            "Date": "15/01/2015",
+            "Stock": "100",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "2",
+            "Name": "awesome compt",
+            "Price": "950",
+            "Category": "computer",
+            "Date": "15/02/2015",
+            "Stock": "600",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "3",
+            "Name": "awesome furnit6",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "10/09/2015",
+            "Stock": "200",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "4",
+            "Name": "awesome compt3",
+            "Price": "500",
+            "Category": "computer",
+            "Date": "22/08/2015",
+            "Stock": "500",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "5",
+            "Name": "awesome furnit5",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "02/03/2015",
+            "Stock": "2700",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "6",
+            "Name": "awesome furnit2",
+            "Price": "450",
+            "Category": "furniture",
+            "Date": "15/02/2015",
+            "Stock": "800",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "7",
+            "Name": "awesome furnit3",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "16/01/2015",
+            "Stock": "600",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "8",
+            "Name": "awesome furnit4",
+            "Price": "450",
+            "Category": "computer",
+            "Date": "25/03/2015",
+            "Stock": "200",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "9",
+            "Name": "awesome compt2",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "15/03/2015",
+            "Stock": "200",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "10",
+            "Name": "awesome compt4",
+            "Price": "450",
+            "Category": "computer",
+            "Date": "30/03/2015",
+            "Stock": "500",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "11",
+            "Name": "awesome telphn2",
+            "Price": "200",
+            "Category": "telephone",
+            "Date": "15/01/2015",
+            "Stock": "100",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "12",
+            "Name": "Toshiba",
+            "Price": "950",
+            "Category": "computer",
+            "Date": "15/02/2015",
+            "Stock": "600",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "13",
+            "Name": "das furnit6",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "10/09/2015",
+            "Stock": "200",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "14",
+            "Name": "compt3",
+            "Price": "500",
+            "Category": "computer",
+            "Date": "22/08/2015",
+            "Stock": "500",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "15",
+            "Name": "furnit5",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "02/03/2015",
+            "Stock": "2700",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "16",
+            "Name": "furnit2",
+            "Price": "450",
+            "Category": "furniture",
+            "Date": "15/02/2015",
+            "Stock": "700",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "17",
+            "Name": "lorem",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "16/01/2015",
+            "Stock": "600",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "18",
+            "Name": "ipsum",
+            "Price": "450",
+            "Category": "computer",
+            "Date": "25/03/2015",
+            "Stock": "200",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "19",
+            "Name": "sit",
+            "Price": "350",
+            "Category": "furniture",
+            "Date": "16/03/2015",
+            "Stock": "500",
+            "Details": "asdasd"
+        },
+        {
+            "ID": "20",
+            "Name": "dolor",
+            "Price": "450",
+            "Category": "computer",
+            "Date": "30/02/2015",
+            "Stock": "500",
+            "Details": "asdasd"
+        }
+    ]
 }
